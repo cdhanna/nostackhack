@@ -1,13 +1,51 @@
 <html>
 
 <head>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Slab" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="all.css">
+
 	<title> No Stack Hack </title>
 </head>
 
 <body>
-	<div>
-		Hello world
+
+
+	<img id="back" src="./assets/back.png"/>
+
+	<div id="main">
+		<div id="wrapper">
+			<div id="title">
+				The No 
+				<img src="./assets/stack.png"/> Stack 
+				Hack
+			</div>
+			<div id="tag">
+				A hackathon in the woods with no internet to guide you.
+			</div>
+		</div>
 	</div>
+
+	<script>
+
+		// turn on elements
+		var mainTitle = document.querySelector('#main #title');
+		var mainTag = document.querySelector('#main #tag');
+
+		var mainBox = document.querySelector('#main #wrapper')
+		console.log(mainBox)
+
+		setTimeout(function(){
+
+			mainTitle.className = 'show'
+			mainTag.className = 'show'
+			mainBox.className = 'show'
+
+		}, 500);
+
+	</script>
+
+
 </body>
 
 
