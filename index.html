@@ -11,7 +11,7 @@
 <body>
 
 
-	<img id="back" src="./assets/back.png"/>
+	<img id="back" />
 
 	<div id="main">
 		<div id="wrapper">
@@ -21,7 +21,7 @@
 				Hack
 			</div>
 			<div id="tag">
-				A hackathon in the woods with no internet to guide you.
+				In the woods, there is no internet to hear you scream.
 			</div>
 		</div>
 	</div>
@@ -31,8 +31,10 @@
 		// turn on elements
 
 		var background = document.querySelector('img#back');
+		console.log(background);
 		background.onload = function(){
-			background.classname = 'show';
+			background.className = 'show';
+
 			var mainTitle = document.querySelector('#main #title');
 			var mainTag = document.querySelector('#main #tag');
 
@@ -45,8 +47,9 @@
 				mainTag.className = 'show'
 				mainBox.className = 'show'
 
-			}, 500);
+			}, 1000);
 		}
+		background.src = './assets/back.png';
 
 
 	</script>
