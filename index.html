@@ -29,19 +29,25 @@
 	<script>
 
 		// turn on elements
-		var mainTitle = document.querySelector('#main #title');
-		var mainTag = document.querySelector('#main #tag');
 
-		var mainBox = document.querySelector('#main #wrapper')
-		console.log(mainBox)
+		var background = document.querySelector('img#back');
+		background.onload = function(){
+			background.classname = 'show';
+			var mainTitle = document.querySelector('#main #title');
+			var mainTag = document.querySelector('#main #tag');
 
-		setTimeout(function(){
+			var mainBox = document.querySelector('#main #wrapper')
+			console.log(mainBox)
 
-			mainTitle.className = 'show'
-			mainTag.className = 'show'
-			mainBox.className = 'show'
+			setTimeout(function(){
 
-		}, 500);
+				mainTitle.className = 'show'
+				mainTag.className = 'show'
+				mainBox.className = 'show'
+
+			}, 500);
+		}
+
 
 	</script>
 
